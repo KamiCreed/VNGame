@@ -1,0 +1,9 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 97: end of line expected.
+    mc "My name is %(mc)s. W-what is going on?":
+                                               ^
+
+Ren'Py Version: Ren'Py 6.99.10.1227

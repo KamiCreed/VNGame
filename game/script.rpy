@@ -18,30 +18,30 @@ label start:
     $ mc = ''
     $ revealed = False
 
-    "The foul stench of my basetment is getting to me."
-    
-    "Usually I'm able to ignore my own filth but something is different today."
+    "The foul stench of my basement is getting to me."
+
+    "Usually I'm able to ignore my own filth, but something is different today."
 
 menu:
     "Go Outside.":
         "You remember that you're alergic to going outside."
         jump important
 
-    "Clean your room":
-        "You get cry out and get your mom to clean your flith. She has a distinct look of resignation and sadness as she picks up your dirtied underwear."
+    "Clean your room.":
+        "You cry out and get your mom to clean your flith. She has a distinct look of resignation and sadness as she picks up your dirtied underwear."
         jump important
-        
+
 label important:
-    
-    "Alas the filth is gone. Now I can focus on important business!"
+
+    "Alas the filth is gone. Now I can focus on the important stuff!"
 
     "*important things happening*"
 
-    "Ahh, if it wasn't for me that anime would have gone unwatched! I should get a good citizen award or something"
+    "Ahh, if it wasn't for me, that anime would have gone unwatched! I should get a good citizen award or something"
 
 menu:
     "Go to sleep.":
-        "You spend 2 hrs being baited by a troll before losing consciousness"
+        "You spend 2 hours being baited by a troll before losing consciousness."
         jump acquiring_grill
 
     "Do more important business":
@@ -51,40 +51,40 @@ menu:
 label acquiring_grill:
     "You wake up the next day. Your face is wet with drool."
 
-    "You don't bother cleaning it and instead it slowly evaporates and drips off your face throughout the day."
+    "You don't even bother cleaning it, and instead it slowly evaporates and drips off your face throughout the day."
 
     "However today isn't any day! It's the day you're meeting your GF for the first time."
 
     "You head downstairs after hearing the doorbell."
 
-    "You open the door, thank the delivery man, grab your precious package and head back into your lair."
-    
+    "You open the door, thank the delivery man, grab your precious package, and head back into your lair."
+
     "Before you begin your l33t unboxing video you hear a strange sound."
 
     g1 "Let me out of here. Reeeeeeee. I know you're out there!"
-    
-    "This startles the bananas out of you but you slowly calm down. It must be just a prank."
-    
+
+    "This startles the bananas out of you, but you slowly calm down. It must be just a prank."
+
     g1 "Come on bro. Let me out of here. Don't just leave me in here. Also I'm a real person."
-    
+
 menu:
     "Freak out":
         "You scream out and hide under your bed sheets."
         jump name
 
     "Show off your manly side":
-        "You try to say something but you're a huge loser. You end up blacking out for a minute."
+        "You try to say something, but you're a huge loser. You end up blacking out for a minute."
         jump name
 
 label name:
-    g1 "Jesus Christ. The type of people who would buy a dakimakura are obviously degenerates but this is worse than I had anticipated."
-        
+    g1 "Jesus Christ. The type of people who would buy a dakimakura are obviously degenerates, but this is worse than I had anticipated."
+
     g1 "I promise I won't bite."
-    
+
     "You muster up all your courage and open the box."
-    
+
     "Nothing is out of place. It's the dakimakura you ordered."
-    
+
 
     $ aaa = "Idrin"
     g1 "Boo! My name is %(aaa)s. Yes I know it's probably different than whatever girl is printed on the pillow."
@@ -94,23 +94,25 @@ label name:
     $ mc = renpy.input("What is your name?")
 
 menu:
-    "My name is %(mc)s. W-what is going on?":
+    "Introduce yourself and ask for information.":
+        mc "My name is %(mc)s. W-what is going on?"
         g1 "I'll explain in a moment but please go change. It was a mistake to scare you. I didn't think you'd literally shit your pants."
         jump plot
 
-    "My name is %(mc)s. Greetings M\'\Lady":
-        g1 "Fuck it. Please incinerate me."
+    "Greet her like the degenerate you are.":
+        mc "My name is %(mc)s. Greetings M\'\Lady"
+        g1 "F*** it. Please incinerate me."
         jump gameover
-        
+
 label gameover:
     "Your degeneracy has caused this game to end early."
     jump end
-    
+
 label plot:
-    g1 "I'm a normal everyday person that was randomly trapped in this dakimakura. I randomly woke up one day and I saw nothing but blackness."
-   
+    g1 "I'm a normal everyday person that was randomly trapped in this dakimakura. I randomly woke up one day, and I saw nothing but blackness."
+
     g1 "I can still hear, see, and smell so I could hear factory sounds and truck sounds which helped me figure out what was going on."
-    
-    g1 "But with no limbs I'm kind of useless, therefore it'll be up to you to save me and help me get back in my own body."
-    
+
+    g1 "But with no limbs I'm kind of useless; therefore, it'll be up to you to save me and help me get back in my own body."
+
 label end:
